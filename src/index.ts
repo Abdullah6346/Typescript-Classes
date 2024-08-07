@@ -23,7 +23,7 @@ const user=new Readonly("gladdy")
 // user.username Possible in Readonly
 console.log(userone)
 
-// Modern Way: to write classes constructures
+// TODO: Modern Way: to write classes constructures
 class Students{
     constructor ( public name:string,public email:string,private id:string){
 
