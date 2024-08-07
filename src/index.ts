@@ -25,7 +25,9 @@ console.log(userone)
 
 // TODO: Modern Way: to write classes constructures
 class Students{
-    constructor ( public name:string,public email:string,private id:string){
+    constructor (
+         public name:string,public email:string,private id:string
+        ){
 
     }
 }
