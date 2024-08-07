@@ -1,4 +1,4 @@
-// Getter
+// Getterand setters
 class Name{
     constructor(firstname,lastname){
         this.firstname=firstname;
