@@ -1,41 +1,41 @@
-// // Private vs Readonly
-// class User{
-//     public    name:string
-//     private city:string //hash can also be used #city
-//     public email:string
-//     constructor(name:string,email:string,city:string){
-//          this.name=name
-//         this.email=email
-//         this.city=city
-//     }
-// } 
-// class Readonly{
-//    readonly username:string
-//    constructor(username:string){
-//     this.username=username
-//    }
-// }
+// Private vs Readonly
+class User{
+    public    name:string
+    private city:string //hash can also be used #city
+    public email:string
+    constructor(name:string,email:string,city:string){
+         this.name=name
+        this.email=email
+        this.city=city
+    }
+} 
+class Readonly{
+   readonly username:string
+   constructor(username:string){
+    this.username=username
+   }
+}
 
 
-// const userone = new User("gladdy","gladdy@.com","Faisalabad")
-// // userone.city not possible
-// const user=new Readonly("gladdy")
-// // user.username Possible in Readonly
-// console.log(userone)
+const userone = new User("gladdy","gladdy@.com","Faisalabad")
+// userone.city not possible
+const user=new Readonly("gladdy")
+// user.username Possible in Readonly
+console.log(userone)
 
-// // TODO: Modern Way: to write classes constructures
-// class Students{
-//     constructor (
-//          public name:string,public email:string,private id:string
-//         ){
+// TODO: Modern Way: to write classes constructures
+class Students{
+    constructor (
+         public name:string,public email:string,private id:string
+        ){
 
-//     }
-// }
-// const firstStudent=new Students("gladdy","gladdy1234@gmail.com","8-990-9")
-// const secondStudent=new Students("Umar","Umar664@gmail.com","890-98-98")
-// console.log(firstStudent,secondStudent)
-// export{}
-// //TODO:getters and setters and use of protected
+    }
+}
+const firstStudent=new Students("gladdy","gladdy1234@gmail.com","8-990-9")
+const secondStudent=new Students("Umar","Umar664@gmail.com","890-98-98")
+console.log(firstStudent,secondStudent)
+export{}
+ //TODO:getters and setters and use of protected
 class Student{
     protected _coursecount=1
     constructor (
@@ -69,8 +69,9 @@ const subabdullah=new SubStudent("Gladdy","gladdy@gmail.com","888")
 subabdullah.chang_course_count()
 
 
+
 const abdullah=new Student("Abdullah","h@hgmail.com","123")
-abdullah.coursecount=5
+abdullah._coursecount
 
 console.log(abdullah.coursecount) 
 
