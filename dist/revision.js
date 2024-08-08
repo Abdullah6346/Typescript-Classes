@@ -21,20 +21,20 @@ class Name{
 
 
 
-//  Setter
-// class Person{
-//     constructor(name,age,id,email){
-//         this.name=name
-//         this.email=email
-//         this.age=age
-//         this.id=id
-//     }
-//     set getid(newid){
-//         this.id=newid
-//     }
+ Setter
+class Person{
+    constructor(name,age,id,email){
+        this.name=name
+        this.email=email
+        this.age=age
+        this.id=id
+    }
+    set getid(newid){
+        this.id=newid
+    }
 
-// }
-// const newPerson=new Person("gladdy",24,"1221","gladdy123@gmail.com")
-// newPerson.getid="12345"
+}
+const newPerson=new Person("gladdy",24,"1221","gladdy123@gmail.com")
+newPerson.getid="12345"
 
-// console.log(newPerson.id)
+console.log(newPerson.id)
