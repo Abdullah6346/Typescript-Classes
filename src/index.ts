@@ -71,7 +71,7 @@ subabdullah.chang_course_count()
 
 
 const abdullah=new Student("Abdullah","h@hgmail.com","123")
-abdullah._coursecount
+// abdullah._coursecount
 
 console.log(abdullah.coursecount) 
 
