@@ -35,3 +35,40 @@ const firstStudent=new Students("gladdy","gladdy1234@gmail.com","8-990-9")
 const secondStudent=new Students("Umar","Umar664@gmail.com","890-98-98")
 console.log(firstStudent,secondStudent)
 export{}
+//TODO:getters and setters 
+class Student{
+    private _coursecount=1
+    constructor (
+         public name:string,public email:string,private id:string
+        ){
+     
+    }
+    get studentemail():string{
+        return `Email is ${this.email}`
+     }   
+     get coursecount():number{
+        return this._coursecount
+     }
+     set coursecount(coursecount){
+        if(coursecount<=1){
+              throw new Error("Not possible Beacause You are on a free trial ")
+        }
+        this._coursecount=coursecount
+     }
+
+}
+
+const abdullah=new Student("Abdullah","h@hgmail.com","123")
+abdullah.coursecount=5
+
+console.log(abdullah.coursecount) 
+
+
+
+
+
+
+
+
+
+
