@@ -1,4 +1,3 @@
-let a: Array<number> = [5, 5, 5];
 //TODO: it cannt return any extra
 function identty0ne(val: number | boolean): number | boolean {
   return val;
@@ -23,3 +22,16 @@ interface Bootle {
   amount: number;
 }
 console.log(identityFour<Bootle>({ brand: 'cock', amount: 600 }));
+
+// TODO:ARRAYS
+
+function get_products<t>(array: t[]): t {
+  const index = 1;
+  return array[index];
+}
+console.log(get_products([0, 1, 2, 3]));
+
+const getmore_produc = <T>(array: T[]): T[] => {
+  return array;
+};
+console.log(getmore_produc(['Sugar', 'Cup', 'Milk', 'tea']));
